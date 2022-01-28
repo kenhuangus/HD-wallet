@@ -18,6 +18,12 @@ npx run demos
 ```
 You can update the package.json file to include the js file to test. 
 
+or you can run each individual demo case by issue following command
+```bash
+npx run ./demos/1.private-key-to-ethereum-address.js
+```
+
+
 ## BIP39 and BIP44 Online 
 Play a bit with the BIP39 online implementation here: [iancoleman](https://iancoleman.io/bip39). Generate/load mnemonics, derive Ethereum and Bitcoin keys and addresses. 
 
