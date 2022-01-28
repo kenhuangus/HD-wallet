@@ -12,6 +12,10 @@ npm init -y
 ```bash
 npm install --save ethers
 ```
+to run demos use the following command at the root of this project
+npx run demos
+You can update the package.json file to include the js file to test. 
+
 ## BIP39 and BIP44 Online 
 Play a bit with the BIP39 online implementation here: [iancoleman](https://iancoleman.io/bip39). Generate/load mnemonics, derive Ethereum and Bitcoin keys and addresses. 
 
