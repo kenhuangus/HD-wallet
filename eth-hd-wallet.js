@@ -25,7 +25,7 @@ console.log();
 
 function generateMnemonic() {
     let randomEntropyBytes = ethers.utils.randomBytes(16);
-    return ethers.utils.HDNode.fromSeed(randomEntropyBytes);
+    return ethers.utils.HDNode.fromSeed(randomEntropyBytes).mnemonic;
 }
 
 function generateRandomHDNode() {
