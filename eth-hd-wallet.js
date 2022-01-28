@@ -22,7 +22,7 @@ console.log(restoreHDWallet(mnemonic));
 // 2A) Generate a New Random HD Wallet from Random Mnemonic
 
 console.log();
-
+/**
 function generateMnemonic() {
     let randomEntropyBytes = ethers.utils.randomBytes(16);
     return ethers.utils.HDNode.fromSeed(randomEntropyBytes);
@@ -34,6 +34,9 @@ function generateRandomHDNode() {
 }
 
 console.log(generateRandomHDNode());
+**/
+
+
 
 console.log();
 
