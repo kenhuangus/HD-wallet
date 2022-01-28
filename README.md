@@ -13,7 +13,9 @@ npm init -y
 npm install --save ethers
 ```
 to run demos use the following command at the root of this project
+```bash
 npx run demos
+```
 You can update the package.json file to include the js file to test. 
 
 ## BIP39 and BIP44 Online 
