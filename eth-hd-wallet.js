@@ -115,7 +115,7 @@ async function signTransaction(wallet, toAddress, value) {
 }
 
 let wallets = deriveFiveWalletsFromHdNode(mnemonic, derivationPath);
-let wallet = wallets[1];
+let wallet = wallets[2];
 let recipient = "0x933b946c4fec43372c5580096408d25b3c7936c5";
 let value = "1.0";
 
