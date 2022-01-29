@@ -106,12 +106,12 @@ async function signTransaction(wallet, toAddress, value) {
     let transaction = {
         nonce: 0,
         gasLimit: 21000,
-        gasPrice: ethers.utils.bigNumberify("2000000000"),
+        gasPrice: ethers.BigNumber.from("2000000000"),
         to: toAddress,
         value: ethers.utils.parseEther(value),
         data: "0x"
     };
-    return wallet.sign(transaction);
+    return wallet.signTransaction(transaction);
 }
 
 let wallets = deriveFiveWalletsFromHdNode(mnemonic, derivationPath);
