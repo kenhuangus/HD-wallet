@@ -91,6 +91,7 @@ function deriveFiveWalletsFromHdNode(mnemonic, derivationPath) {
             let hdNode = ethers.utils.HDNode.fromMnemonic(mnemonic).derivePath(derivationPath + "/" + i);
             console.log(hdNode);
             let wallet = new ethers.Wallet(hdNode.privateKey);
+           console.log("saved encrypted wallet as Json"+ saveWalletAsJson(wallet, "pass$wd"));
             wallets.push(wallet);
         }
         return wallets;
