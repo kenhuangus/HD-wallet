@@ -60,7 +60,7 @@ async function saveWalletAsJson(wallet, password) {
     let wallet = ethers.Wallet.createRandom();
     let password = "p@$$word";
     let json = await saveWalletAsJson(wallet, password);
-    console.log(json);
+    console.log("wallet encrypted in json :\n"+ json);
 })();
 
 console.log();
@@ -77,7 +77,7 @@ async function decryptWallet(json, password) {
     let password = "p@$$word";
     let json = await saveWalletAsJson(wallet, password);
     let walletDecrypted = await decryptWallet(json, password);
-    console.log(walletDecrypted);
+    console.log("decrypted wallet from json is :\n" + walletDecrypted);
 })();
 
 console.log();
