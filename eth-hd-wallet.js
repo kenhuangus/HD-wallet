@@ -57,7 +57,9 @@ async function saveWalletAsJson(wallet, password) {
 }
 
 (async() => {
-    let wallet = ethers.Wallet.createRandom();
+    let wallet = ethers.Wallet.createRandom();'
+    let wordlist = wallet.mnemonic;
+    console.log("the mnemonic is  \n"+ wordlist);
     let password = "p@$$word";
     let json = await saveWalletAsJson(wallet, password);
     console.log("wallet encrypted in json :\n"+ json);
